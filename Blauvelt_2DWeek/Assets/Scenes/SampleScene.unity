@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 499618475}
   - component: {fileID: 499618474}
   - component: {fileID: 499618473}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 1411907920}
   - component: {fileID: 1411907919}
   - component: {fileID: 1411907918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1418013335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TestLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
