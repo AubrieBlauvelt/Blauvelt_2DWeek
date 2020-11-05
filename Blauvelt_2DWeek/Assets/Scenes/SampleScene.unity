@@ -3266,3 +3266,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 500
   jumpSpeed: 15
+  animator: {fileID: 308723498}

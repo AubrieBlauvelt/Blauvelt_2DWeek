@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed;
     public float jumpSpeed;
 
+    public Animator animator; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,12 @@ public class PlayerMovement : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
 
-        rB2D.velocity = new Vector2(horizontalInput * runSpeed * Time.deltaTime, rB2D.velocity.y); 
+        rB2D.velocity = new Vector2(horizontalInput * runSpeed * Time.deltaTime, rB2D.velocity.y);
+
+        if (Mathf.Abs(horizontalInput) > 0f)
+            animator.SetBool("IsRunning", false);
+        else
+            animator.SetBool("IsRunning", true);
     }
 
     void Jump()
