@@ -225,6 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 308723496}
   - component: {fileID: 308723497}
+  - component: {fileID: 308723498}
   m_Layer: 0
   m_Name: PlayerGraphic
   m_TagString: Untagged
@@ -297,6 +298,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &308723498
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308723495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2cd12d076681510448c1d09ae8d98152, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &370187833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1864,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 17, y: 4, z: 0}
+  - first: {x: 18, y: 4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 10
@@ -1853,7 +1873,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
-  - first: {x: 18, y: 4, z: 0}
+  - first: {x: 19, y: 4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 10
@@ -2679,21 +2699,21 @@ CompositeCollider2D:
         Y: 43999900
       - X: 30000041
         Y: 43999900
-    - - X: 190000100
+    - - X: 200000100
         Y: 43999959
-      - X: 190000100
+      - X: 200000100
         Y: 50000041
-      - X: 190000041
+      - X: 200000041
         Y: 50000100
-      - X: 169999959
+      - X: 180000041
         Y: 50000100
-      - X: 169999900
+      - X: 180000100
         Y: 50000041
-      - X: 169999900
+      - X: 180000100
         Y: 43999959
-      - X: 169999959
+      - X: 180000041
         Y: 43999900
-      - X: 190000041
+      - X: 200000041
         Y: 43999900
     - - X: -189999900
         Y: 33999959
@@ -3054,10 +3074,10 @@ CompositeCollider2D:
       - {x: 2.9999747, y: 5.00001}
       - {x: -3.00001, y: 4.9999747}
       - {x: -2.9999747, y: 4.39999}
-    - - {x: 18.999975, y: 4.39999}
-      - {x: 18.999975, y: 5.00001}
-      - {x: 16.99999, y: 4.9999747}
-      - {x: 17.000027, y: 4.39999}
+    - - {x: 19.999975, y: 4.39999}
+      - {x: 19.999975, y: 5.00001}
+      - {x: 18.00001, y: 4.9999747}
+      - {x: 18.000034, y: 4.39999}
     - - {x: -19.000027, y: 3.39999}
       - {x: -19.000027, y: 4.00001}
       - {x: -20.00001, y: 3.9999747}
