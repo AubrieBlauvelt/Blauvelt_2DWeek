@@ -3267,3 +3267,4 @@ MonoBehaviour:
   runSpeed: 500
   jumpSpeed: 15
   animator: {fileID: 308723498}
+  spriteRenderer: {fileID: 308723497}
