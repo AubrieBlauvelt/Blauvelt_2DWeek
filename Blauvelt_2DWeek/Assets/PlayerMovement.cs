@@ -57,4 +57,13 @@ public class PlayerMovement : MonoBehaviour
     {
         rB2D.velocity = new Vector2(rB2D.velocity.x, jumpSpeed);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Cherry"))
+        {
+            other.gameObject.SetActive(false);
+        }
+       
+    }
 }
