@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro; 
 
 public class PlayerMovement : MonoBehaviour
 {
+    public TextMeshProUGUI countText;
 
     Rigidbody2D rB2D;
+
+    private int count;
 
     public float runSpeed;
     public float jumpSpeed;
@@ -18,6 +22,10 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rB2D = GetComponent<Rigidbody2D>();
+
+        count = 0;
+
+        SetCountText();
     }
 
     // Update is called once per frame
@@ -32,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
                 Jump();
             } 
         }
+    }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
     }
 
 
@@ -63,6 +76,9 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Cherry"))
         {
             other.gameObject.SetActive(false);
+            count = count + 1;
+
+            SetCountText();
         }
        
     }
